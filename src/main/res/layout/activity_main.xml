@@ -1,0 +1,151 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=" battery precentage "
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:id="@+id/text1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charge Percent:"
+        android:textSize="25sp"
+        android:id="@+id/text3"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="25dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_toRightOf="@+id/text3"
+        android:layout_toEndOf="@id/text3"
+        android:hint="0"
+        android:paddingLeft="100dp"
+        android:inputType="number"
+        android:id="@+id/edt1"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discharge Percent:"
+        android:textSize="25sp"
+        android:id="@+id/text4"
+        android:layout_below="@id/text3"
+        android:layout_marginTop="25dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt1"
+
+        android:layout_toRightOf="@id/text4"
+        android:layout_toEndOf="@id/text4"
+        android:paddingLeft="61dp"
+        android:hint="0"
+        android:id="@+id/edt2"
+        android:inputType="number"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/edt2"
+        android:onClick="start"
+        android:text="START"
+        android:clickable="true"
+        android:layout_marginTop="30dp"
+        android:focusable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt2"
+        android:layout_toRightOf="@id/show"
+        android:layout_toEndOf="@id/show"
+        android:onClick="stop"
+        android:text="stop"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FlashLight:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@id/show"
+        android:id="@+id/text"
+        android:layout_marginTop="40dp"/>
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text"
+        android:layout_toEndOf="@id/text"
+        android:layout_below="@id/show"
+        android:layout_marginTop="40sp"
+        android:textSize="15sp"
+        android:id="@+id/tog"
+        android:checked="false"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIBRATE       :"
+        android:textSize="25sp"
+        android:layout_below="@id/text"
+        android:textStyle="bold"
+        android:layout_marginTop="44dp"
+        android:id="@+id/text2"
+        />
+   <ToggleButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15sp"
+       android:layout_toRightOf="@id/text2"
+       android:layout_toEndOf="@id/text2"
+       android:layout_below="@id/tog"
+       android:id="@+id/toggle2"
+       android:layout_marginTop="30dp"
+       android:checked="false"
+       />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Select Songs :"
+        android:textSize="25sp"
+        android:layout_below="@id/toggle2"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:id="@+id/songs"
+        android:onClick="Select_songs"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/path"
+        android:layout_toRightOf="@id/songs"
+        android:layout_toEndOf="@id/songs"
+        android:layout_below="@id/toggle2"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+
+</RelativeLayout>
+</ScrollView>
