@@ -26,5 +26,7 @@ Welcome to the **Battery App** GitHub repository! This app was designed to help 
 - **Programming Language**: Java
 - **GUI Framework**: XML (for a simple and interactive user interface)
 - **Platform**: Android
+
+  
 Thank you for checking out **Battery App**! We hope it helps you manage your device's battery more effectively. If you like this project, don't forget to give it a star! ⭐
 
