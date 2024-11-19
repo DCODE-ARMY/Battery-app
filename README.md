@@ -7,8 +7,7 @@ Welcome to the **Battery App** GitHub repository! This app was designed to help 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## **Features**
 - **Battery Charge Notification**: Set a specific battery percentage (e.g., 95%) at which the app will notify you with sound and vibration, preventing overcharging and overheating.
